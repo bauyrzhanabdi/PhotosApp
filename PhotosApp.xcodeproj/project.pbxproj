@@ -15,6 +15,7 @@
 		B217CD0629CB0DC9004595AC /* CollectionViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B217CD0529CB0DC9004595AC /* CollectionViewHeader.swift */; };
 		B217CD0A29CB118E004595AC /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = B217CD0929CB118E004595AC /* SnapKit */; };
 		B217CD0C29CB13AD004595AC /* NSObject+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B217CD0B29CB13AD004595AC /* NSObject+Extension.swift */; };
+		B217CD1029CB1CBA004595AC /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = B217CD0F29CB1CBA004595AC /* Model.swift */; };
 		B22469AC29CAFE500065E7E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22469AB29CAFE500065E7E7 /* AppDelegate.swift */; };
 		B22469AE29CAFE500065E7E7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22469AD29CAFE500065E7E7 /* SceneDelegate.swift */; };
 		B22469B029CAFE500065E7E7 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22469AF29CAFE500065E7E7 /* TabBarController.swift */; };
@@ -30,6 +31,7 @@
 		B217CD0229CB0D6B004595AC /* AlbumsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsCollectionViewCell.swift; sourceTree = "<group>"; };
 		B217CD0529CB0DC9004595AC /* CollectionViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewHeader.swift; sourceTree = "<group>"; };
 		B217CD0B29CB13AD004595AC /* NSObject+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Extension.swift"; sourceTree = "<group>"; };
+		B217CD0F29CB1CBA004595AC /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		B22469A829CAFE500065E7E7 /* PhotosApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotosApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B22469AB29CAFE500065E7E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B22469AD29CAFE500065E7E7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -85,6 +87,14 @@
 				B217CD0029CB0566004595AC /* SearchViewController.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		B217CD1129CB1CBF004595AC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B217CD0F29CB1CBA004595AC /* Model.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		B224699F29CAFE500065E7E7 = {
@@ -145,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				B22469BF29CAFF690065E7E7 /* App */,
+				B217CD1129CB1CBF004595AC /* Model */,
 				B22469C029CAFF860065E7E7 /* View */,
 				B217CD0D29CB13B9004595AC /* Extension */,
 			);
@@ -235,6 +246,7 @@
 				B217CD0C29CB13AD004595AC /* NSObject+Extension.swift in Sources */,
 				B217CD0329CB0D6B004595AC /* AlbumsCollectionViewCell.swift in Sources */,
 				B217CCFB29CB051E004595AC /* LibraryViewController.swift in Sources */,
+				B217CD1029CB1CBA004595AC /* Model.swift in Sources */,
 				B217CCFD29CB0544004595AC /* ForYouViewController.swift in Sources */,
 				B22469AE29CAFE500065E7E7 /* SceneDelegate.swift in Sources */,
 			);
