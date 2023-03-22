@@ -7,6 +7,8 @@ final class AlbumsCollectionViewCell: UICollectionViewCell {
     
     private lazy var albumsContainer: UIStackView = {
         let stackView = UIStackView()
+        stackView.axis = .vertical
+        stackView.distribution = .fill
         stackView.translatesAutoresizingMaskIntoConstraints = false
         return stackView
     }()
@@ -55,8 +57,17 @@ final class AlbumsCollectionViewCell: UICollectionViewCell {
     private func setupLayout() {
         albumsContainer.snp.makeConstraints { make in
             make.edges.equalToSuperview()
-            make.width.equalTo(170)
-            make.height.equalTo(200)
+            make.width.equalTo(200)
+            make.height.equalTo(400)
         }
+    }
+    
+    // MARK: - Methods
+    
+    func configure(model: AlbumsModel) {
+        guard let image = UIImage(named: model.image) else { return }
+        albumsImageView.image = image
+        titleLabel.text = model.title
+        quantityLabel.text = model.quantity
     }
 }
