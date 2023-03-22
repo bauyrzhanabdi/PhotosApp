@@ -14,6 +14,7 @@
 		B217CD0329CB0D6B004595AC /* AlbumsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B217CD0229CB0D6B004595AC /* AlbumsCollectionViewCell.swift */; };
 		B217CD0629CB0DC9004595AC /* CollectionViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B217CD0529CB0DC9004595AC /* CollectionViewHeader.swift */; };
 		B217CD0A29CB118E004595AC /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = B217CD0929CB118E004595AC /* SnapKit */; };
+		B217CD0C29CB13AD004595AC /* NSObject+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B217CD0B29CB13AD004595AC /* NSObject+Extension.swift */; };
 		B22469AC29CAFE500065E7E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22469AB29CAFE500065E7E7 /* AppDelegate.swift */; };
 		B22469AE29CAFE500065E7E7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22469AD29CAFE500065E7E7 /* SceneDelegate.swift */; };
 		B22469B029CAFE500065E7E7 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22469AF29CAFE500065E7E7 /* TabBarController.swift */; };
@@ -28,6 +29,7 @@
 		B217CD0029CB0566004595AC /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		B217CD0229CB0D6B004595AC /* AlbumsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsCollectionViewCell.swift; sourceTree = "<group>"; };
 		B217CD0529CB0DC9004595AC /* CollectionViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewHeader.swift; sourceTree = "<group>"; };
+		B217CD0B29CB13AD004595AC /* NSObject+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Extension.swift"; sourceTree = "<group>"; };
 		B22469A829CAFE500065E7E7 /* PhotosApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotosApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B22469AB29CAFE500065E7E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B22469AD29CAFE500065E7E7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +67,26 @@
 			path = CollectionViewHeader;
 			sourceTree = "<group>";
 		};
+		B217CD0D29CB13B9004595AC /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B217CD0B29CB13AD004595AC /* NSObject+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		B217CD0E29CB13F1004595AC /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B22469AF29CAFE500065E7E7 /* TabBarController.swift */,
+				B217CCFE29CB0557004595AC /* AlbumsViewController.swift */,
+				B217CCFA29CB051E004595AC /* LibraryViewController.swift */,
+				B217CCFC29CB0544004595AC /* ForYouViewController.swift */,
+				B217CD0029CB0566004595AC /* SearchViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		B224699F29CAFE500065E7E7 = {
 			isa = PBXGroup;
 			children = (
@@ -99,16 +121,14 @@
 			path = App;
 			sourceTree = "<group>";
 		};
-		B22469C029CAFF860065E7E7 /* ViewController */ = {
+		B22469C029CAFF860065E7E7 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				B22469AF29CAFE500065E7E7 /* TabBarController.swift */,
-				B217CCFE29CB0557004595AC /* AlbumsViewController.swift */,
-				B217CCFA29CB051E004595AC /* LibraryViewController.swift */,
-				B217CCFC29CB0544004595AC /* ForYouViewController.swift */,
-				B217CD0029CB0566004595AC /* SearchViewController.swift */,
+				B217CD0E29CB13F1004595AC /* ViewController */,
+				B217CD0429CB0D78004595AC /* CollectionViewCell */,
+				B217CD0729CB0DD2004595AC /* CollectionViewHeader */,
 			);
-			path = ViewController;
+			path = View;
 			sourceTree = "<group>";
 		};
 		B22469C129CAFFA10065E7E7 /* Resource */ = {
@@ -125,9 +145,8 @@
 			isa = PBXGroup;
 			children = (
 				B22469BF29CAFF690065E7E7 /* App */,
-				B22469C029CAFF860065E7E7 /* ViewController */,
-				B217CD0429CB0D78004595AC /* CollectionViewCell */,
-				B217CD0729CB0DD2004595AC /* CollectionViewHeader */,
+				B22469C029CAFF860065E7E7 /* View */,
+				B217CD0D29CB13B9004595AC /* Extension */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -213,6 +232,7 @@
 				B217CD0129CB0566004595AC /* SearchViewController.swift in Sources */,
 				B22469AC29CAFE500065E7E7 /* AppDelegate.swift in Sources */,
 				B217CCFF29CB0557004595AC /* AlbumsViewController.swift in Sources */,
+				B217CD0C29CB13AD004595AC /* NSObject+Extension.swift in Sources */,
 				B217CD0329CB0D6B004595AC /* AlbumsCollectionViewCell.swift in Sources */,
 				B217CCFB29CB051E004595AC /* LibraryViewController.swift in Sources */,
 				B217CCFD29CB0544004595AC /* ForYouViewController.swift in Sources */,
@@ -362,6 +382,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -389,6 +410,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
