@@ -16,6 +16,7 @@ final class AlbumsCollectionViewCell: UICollectionViewCell {
     private lazy var albumsImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFill
+        imageView.layer.cornerRadius = 10
         imageView.clipsToBounds = true
         imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
@@ -63,6 +64,13 @@ final class AlbumsCollectionViewCell: UICollectionViewCell {
     }
     
     // MARK: - Methods
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        albumsImageView.image = nil
+        titleLabel.text = nil
+        quantityLabel.text = nil
+    }
     
     func configure(model: AlbumsModel) {
         guard let image = UIImage(named: model.image) else { return }
