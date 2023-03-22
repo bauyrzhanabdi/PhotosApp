@@ -1,13 +1,6 @@
-//
-//  ViewController.swift
-//  PhotosApp
-//
-//  Created by Bauyrzhan Abdi on 22.03.2023.
-//
-
 import UIKit
 
-class ViewController: UIViewController {
+final class TabBarController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
